@@ -1,0 +1,12 @@
+SELECT s.name,
+c.course_name
+
+FROM Students s
+
+INNER JOIN Enrollments e
+
+ON s.student_id=e.student_id
+
+INNER JOIN Courses c
+
+ON e.course_id=c.course_id;
