@@ -1,0 +1,9 @@
+SELECT name
+
+FROM Students
+
+UNION
+
+SELECT name
+
+FROM Instructors;
