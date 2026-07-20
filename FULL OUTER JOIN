@@ -1,0 +1,4 @@
+-- FULL OUTER JOIN simulated using
+LEFT JOIN
+UNION
+RIGHT equivalent.
