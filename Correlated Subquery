@@ -1,0 +1,13 @@
+SELECT *
+
+FROM Students s
+
+WHERE EXISTS(
+
+SELECT *
+
+FROM Enrollments e
+
+WHERE s.student_id=e.student_id
+
+);
