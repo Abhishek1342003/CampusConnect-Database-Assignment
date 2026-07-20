@@ -1,0 +1,17 @@
+BEGIN;
+
+UPDATE Courses
+
+SET available_seats=available_seats-1
+
+WHERE course_id=2;
+
+INSERT INTO Enrollments
+
+(student_id,course_id)
+
+VALUES
+
+(50,100);
+
+ROLLBACK;
