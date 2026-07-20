@@ -1,0 +1,11 @@
+SELECT *
+
+FROM Students
+
+WHERE student_id=(
+
+SELECT MIN(student_id)
+
+FROM Students
+
+);
