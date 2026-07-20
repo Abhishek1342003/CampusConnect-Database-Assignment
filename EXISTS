@@ -1,0 +1,13 @@
+SELECT *
+
+FROM Courses c
+
+WHERE EXISTS(
+
+SELECT *
+
+FROM Enrollments e
+
+WHERE c.course_id=e.course_id
+
+);
